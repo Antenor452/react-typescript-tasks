@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import InputField from "./components/inputField";
 import "./App.css";
 import { Todo } from "./models/todo";
@@ -16,10 +16,11 @@ const App: React.FC = () => {
     }
     setTodos([
       ...todos,
-      { id: Date.now.toString(), todo: todo, isDone: false },
+      { id: Date.now().toString(), todo: todo, isDone: false },
     ]);
     setTodo("");
   };
+
   return (
     <div className="App">
       <span className="title">Taskify</span>
