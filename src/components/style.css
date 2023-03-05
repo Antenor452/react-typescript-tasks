@@ -42,3 +42,45 @@
   outline: none;
   box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
 }
+.todo_list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.todo_item {
+  display: flex;
+  width: 29.5%;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: rgb(173, 173, 1);
+}
+
+.todo_item_text {
+  flex: 1;
+  font-size: 20px;
+  border: none;
+}
+
+.todo_item_icon {
+  margin-left: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.todo_item_icon:hover {
+  color: #2f74c0;
+}
+
+@media (max-width: 1200px) {
+  .todo_item {
+    width: 40%;
+  }
+}
+@media (max-width: 700px) {
+  .todo_item {
+    width: 100%;
+  }
+} ;
